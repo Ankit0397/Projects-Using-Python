@@ -1,0 +1,44 @@
+<<<<<<<<  How to add a new Project into github >>>>>>>>>>
+1. Create a new repository.
+
+2. Install git from gi-scm.com(1 time activity)
+
+3. Open gitbash fom start menu.
+
+4. Type command cd and paste path of the project folder. ex. cd "C:\Users\Administrator\Documents\Py Projects"
+
+5. Run below Commands:
+git config --global.name Ankit
+git config --global user.email "ankitshivam1997@gmail.com"
+
+6. Run : touch .gitignore
+this will create a .gitiignore text file in the project folder here you will mention all the files which you don't want to upload on github.
+
+7. 
+Run : git init
+-- To create .git folder
+Run : git add .
+-- To prepare staging area
+Run : git commit -m "Initial commit"
+-- To initially commit, taking a snapshot.
+Run : git status
+-- To get the status of project.
+
+8. Run : git remote add origin git@github.com:Ankit0397/QR-Code-Generator.git
+to Add origin path.
+
+9. Now, we will link our project from the system to github using these commands in github bash.
+Run : git push origin master
+If SSH key of github is not added to github bash this will give an error.
+- To generate the SSH Key type generate ssh key for github on google or Run this "ssh-keygen -t ed25519 -C "ankitshivam1997@gmail.com"' on github bash
+this will generate new SSH key.
+- To get the SSH key from github bash.
+cat /c/Users/Administrator/.ssh/id_ed25519.pub   (Path you will get while generating SSH key)
+- To add SSH key to your computer. Go to profile on git hub > Settings > SSH keys and Gps Keys > New SSH Key > Save the key.
+Now run " git push origin master"  again in github bash.
+Now you can see your project on github
+
+
+10. Update git project.
+Run : git status
+-- To get the chnaged status.
